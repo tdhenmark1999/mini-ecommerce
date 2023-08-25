@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.signup-container {
+    padding: 120px 0px;
+    height: 100vh;
+    background: #F7F7F7;
+
+    .wrapper {
+        max-width: 400px;
+        margin: auto;
+
+        padding: 0px 20px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+
+            .text-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            input {
+                padding: 12px 10px;
+                margin-bottom: 5px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            button {
+                background: black;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                font-family: 'Oswald', sans-serif;
+                margin-top: 10px;
+                text-transform: uppercase;
+                cursor: pointer;
+
+            }
+
+            h2 {
+                font-family: 'Oswald', sans-serif;
+                font-size: 21px;
+
+                a {
+                    text-decoration: none;
+                    color: #333;
+                }
+            }
+        }
+    }
+}

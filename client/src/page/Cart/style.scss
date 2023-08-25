@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.cart-container {
+    padding-bottom: 120px;
+
+    .empty-cart-message {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Oswald', sans-serif !important;
+        font-size: 24px;
+        font-weight: 600;
+
+        img {
+            height: 300px;
+            width: 500px;
+        }
+    }
+
+    .floating-logout {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #000;
+        color: white;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        padding: initial;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #555;
+        }
+    }
+
+    .oswald-600 {
+        font-family: 'Oswald', sans-serif !important;
+        font-weight: 600;
+    }
+
+
+
+    .wrapper {
+        max-width: 1140px;
+        margin: auto;
+
+        padding: 0px 30px;
+
+        .container-btn-checkout {
+            text-align: right;
+
+            a {
+                width: 200px;
+                padding: 9px;
+                background: #000;
+                border: none;
+                border-radius: 4px;
+                color: white;
+                text-transform: uppercase;
+                font-family: "Oswald", sans-serif;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin: 0px 0px 0px auto;
+                text-decoration: none;
+            }
+        }
+
+        .shop-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .cart-container {
+                position: relative;
+                display: inline-block;
+
+                .fa-shopping-cart {
+                    font-size: 24px;
+                }
+
+                .cart-quantity {
+                    font-family: 'Oswald', sans-serif;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: red;
+                    color: white;
+                    padding: 0 4px;
+                    border-radius: 50%;
+                    font-size: 10px;
+
+                }
+            }
+        }
+
+        .total-text {
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px;
+            text-align: right;
+
+            span {
+                font-size: 36px;
+            }
+        }
+
+        .cart {
+            &__list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 15px;
+            }
+
+
+            &__item {
+                background: #f7f7f7;
+                justify-content: space-between;
+                padding: 10px 15px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+
+                .flex-price {
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+
+                img {
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+
+                p {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                }
+
+                .price-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h3 {
+                        font-family: 'Oswald', sans-serif;
+                        margin-bottom: 0px;
+                    }
+
+                    p {
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: 600;
+                        font-size: 18px;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .btn-container {
+                    display: flex;
+                    gap: 20px;
+
+                    .remove-cart-btn {
+                        background-color: #6F0000;
+                    }
+
+                    button {
+                        width: 100%;
+                        padding: 9px;
+                        background: #333;
+                        border: none;
+                        border-radius: 4px;
+                        color: white;
+                        text-transform: uppercase;
+                        font-family: 'Oswald', sans-serif;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                    }
+                }
+
+
+            }
+
+        }
+    }
+}

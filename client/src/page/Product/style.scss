@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.product-container {
+    .floating-logout {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #000;
+        color: white;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        padding: initial;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #555;
+        }
+    }
+
+    .wrapper {
+        max-width: 1140px;
+        margin: auto;
+
+        padding: 0px 30px;
+
+        .shop-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                font-family: 'Oswald', sans-serif;
+            }
+
+
+
+            .cart-icon-container {
+                position: relative;
+                display: inline-block;
+
+                .fa-shopping-cart {
+                    font-size: 24px;
+                }
+
+                .cart-quantity {
+                    font-family: 'Oswald', sans-serif;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: red;
+                    color: white;
+                    padding: 0 4px;
+                    border-radius: 50%;
+                    font-size: 10px;
+
+                }
+            }
+        }
+
+
+        .product {
+            &__list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 15px;
+            }
+
+
+            &__item {
+                background: #f7f7f7;
+                justify-content: space-between;
+                padding: 10px 15px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+
+
+                img {
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+
+                p {
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                .price-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h3 {
+                        font-family: 'Oswald', sans-serif;
+                    }
+
+                    p {
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                }
+
+
+                button {
+                    width: 100%;
+                    padding: 9px;
+                    background: #333;
+                    border: navajowhite;
+                    border-radius: 4px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: 'Oswald', sans-serif;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
